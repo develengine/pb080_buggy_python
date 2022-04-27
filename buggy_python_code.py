@@ -28,6 +28,7 @@ class RunBinSh:
 
 def import_urlib_version(version):
     '''An epic docstring.'''
+    assert version.isdecimal()
     exec("import urllib%s as urllib" % version)
 
 @app.route('/')
